@@ -59,6 +59,8 @@ router.put("/post/update/:id", (req, res) => {
     );
 });
 
+
+
 //delete post
 router.delete("/post/delete/:id", (req, res) => {
     Posts.findByIdAndRemove(req.params.id).exec((err, deletePost) => {
